@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [5ebc1df] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — All criteria pass or are not applicable; no blocking finding.
 
 [MIL-001]: ../../docs/milestones/mil-001-project-setup.md
 [QC-PY-001]: ../../framework/qc/code/qc-programming-python.md
+[5ebc1df]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/5ebc1df94a4bf8fefe16db074d71f46bcb13abc4

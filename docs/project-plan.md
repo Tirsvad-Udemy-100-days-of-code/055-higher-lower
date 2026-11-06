@@ -23,17 +23,16 @@ This plan schedules the four phases that deliver the Higher or Lower Flask proje
 - Week 1 starts 2026-11-06; the plan ends by 2026-11-16, the few-day effort of [BC-001] Constraints; the dates are the planner's estimate, accepted by S01 in chat on 2026-11-06.
 - Phase length: two to three days each; one branch and one pull request per phase.
 - Autonomous mode: the AI acts as stand-in reviewer for S01 and every review record says so.
-- The Milestone column stays blank (not yet synced) until the host sync runs.
 - Tokens come from `.env`, which is ignored by git and never imported by the project.
 
 ## Gateway Schedule
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Project setup | [MIL-001] | 2026-11-06 to 2026-11-08 | 2026-11-08 | S01 | none (technical tasks) | Skeleton, tooling, README, repository metadata | |
-| Lecture steps | [MIL-002] | 2026-11-08 to 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Routes, HTML and decorator modules with tests | |
-| Higher or Lower game | [MIL-003] | 2026-11-10 to 2026-11-12 | 2026-11-12 | S01 | none (technical tasks) | The final project with tests | |
-| Docs, screenshots and wiki | [MIL-004] | 2026-11-12 to 2026-11-16 | 2026-11-16 | S01 | none (technical tasks) | Screenshots, README, wiki in en, da, ms | |
+| Project setup | [MIL-001] | 2026-11-06 to 2026-11-08 | 2026-11-08 | S01 | none (technical tasks) | Skeleton, tooling, README, repository metadata | [MS-001] |
+| Lecture steps | [MIL-002] | 2026-11-08 to 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Routes, HTML and decorator modules with tests | [MS-002] |
+| Higher or Lower game | [MIL-003] | 2026-11-10 to 2026-11-12 | 2026-11-12 | S01 | none (technical tasks) | The final project with tests | [MS-003] |
+| Docs, screenshots and wiki | [MIL-004] | 2026-11-12 to 2026-11-16 | 2026-11-16 | S01 | none (technical tasks) | Screenshots, README, wiki in en, da, ms | [MS-004] |
 
 ```plantuml
 @startgantt
@@ -78,7 +77,7 @@ A No-Go on a phase stops the later phases; their dates and the end date move by 
 
 - The user named `https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code`; `origin` points at `Tirsvad-Udemy-100-days-of-code/055-higher-lower`. The plan uses `origin`; S01 can correct this at plan acceptance.
 - The tasks are plain technical tasks with no use case, because the assignment text is the specification; a use case is added if the reviewer asks for one.
-- The wiki is written as files in the repository (`docs/wiki/en`, `da`, `ms`) and published to the host wiki only if the host exposes it.
+- The wiki is written as flat files in `docs/wiki/` (English `Page.md`, Danish `Page-da.md`, Bahasa Malaysia `Page-ms.md`), as `framework/process/wiki.md` requires; the framework workflow publishes it to the host wiki after merge.
 
 ---
 
@@ -89,3 +88,7 @@ A No-Go on a phase stops the later phases; their dates and the end date move by 
 [MIL-003]: ./milestones/mil-003-higher-lower-game.md
 [MIL-004]: ./milestones/mil-004-docs-screenshots-wiki.md
 [42b3a09]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/42b3a093b773c9743ae3c104e1c30bf3dc480d7c
+[MS-001]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/milestone/347
+[MS-002]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/milestone/348
+[MS-003]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/milestone/349
+[MS-004]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/milestone/350
