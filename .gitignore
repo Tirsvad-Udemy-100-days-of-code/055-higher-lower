@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and personal files (tokens stay in .env, the project never imports it)
+.env
+.env.*
+!.env.example
+
+# Generated documentation
+/build/
+
+# AI prompt log: this repository is public
+/docs/ai-prompts/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
