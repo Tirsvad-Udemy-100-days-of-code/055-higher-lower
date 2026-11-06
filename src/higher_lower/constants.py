@@ -43,3 +43,8 @@ CORRECT_GIF: str = "https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif"
 HOST: str = "127.0.0.1"
 ## Port the development server listens on.
 PORT: int = 5000
+
+## Still picture used by the HTML rendering lecture step.
+STILL_IMAGE: str = "https://media.giphy.com/media/3o7aCSPqXE5C6T8tBC/giphy_s.gif"
+## Width in pixels of the pictures in the HTML rendering lecture step.
+LECTURE_IMAGE_WIDTH: int = 200
