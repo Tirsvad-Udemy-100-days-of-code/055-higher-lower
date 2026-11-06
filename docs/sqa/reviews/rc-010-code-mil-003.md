@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [f613f8b] |
+| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [cc95105] |
 
 ---
 
@@ -59,4 +59,4 @@ Go — All criteria pass or are not applicable; no blocking finding.
 
 [MIL-003]: ../../docs/milestones/mil-003-higher-lower-game.md
 [QC-PY-001]: ../../framework/qc/code/qc-programming-python.md
-[f613f8b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/f613f8bf2b5b4c385bebcaf8f4a2f975a51044e0
+[cc95105]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/cc95105cf4fb9915e4c392fa58eec5d9a1f7c454
