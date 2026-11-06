@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [fe0f272] |
 
 ---
 
@@ -71,3 +71,4 @@ Go — All Mandatory criteria pass after the plan was corrected before review (N
 
 [PP-001]: ../../docs/project-plan.md
 [QC-PP-001]: ../../framework/qc/artifacts/qc-project-plan.md
+[fe0f272]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/fe0f2722c25220f6efa3b9b2f3d5e01e7f6d90dc
