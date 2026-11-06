@@ -1,8 +1,17 @@
-# RC-001 Business Case review
+# RC-001 review
 
 ## Metadata
 | Key | Value |
-| ---
+| --- | --- |
+| ID | RC-001 |
+| CrossReference | [BC-001], [QC-BC-001] |
+
+## Version History
+| Date | Status | Author | Reviewer | Change | Commit |
+| --- | --- | --- | --- | --- | --- |
+| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+
+---
 
 ## Artifact Under Review
 

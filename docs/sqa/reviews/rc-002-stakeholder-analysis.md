@@ -1,8 +1,17 @@
-# RC-002 Stakeholder Analysis review
+# RC-002 review
 
 ## Metadata
 | Key | Value |
-| ---
+| --- | --- |
+| ID | RC-002 |
+| CrossReference | [SA-001], [QC-SA-001] |
+
+## Version History
+| Date | Status | Author | Reviewer | Change | Commit |
+| --- | --- | --- | --- | --- | --- |
+| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+
+---
 
 ## Artifact Under Review
 
