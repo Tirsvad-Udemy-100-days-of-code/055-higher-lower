@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [9be5031] |
+| 2026-11-06 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [1887fc3] |
 
 ---
 
@@ -58,4 +58,4 @@ Go-with-conditions — All criteria pass except 14, which can only be checked on
 
 [MIL-004]: ../../docs/milestones/mil-004-docs-screenshots-wiki.md
 [QC-WIKI-001]: ../../framework/qc/artifacts/qc-wiki.md
-[9be5031]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/9be50311a022aa5df44af273ccc48723ab854b4d
+[1887fc3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/1887fc347f298a930cf34e126092a170a7efc7f9
