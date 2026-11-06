@@ -7,7 +7,7 @@ only for a logged-in user.
 from collections.abc import Callable
 from functools import wraps
 
-from flask import Flask
+from flask import Blueprint, Flask
 from markupsafe import escape
 
 from higher_lower.constants import HOST, PORT
@@ -57,28 +57,33 @@ def create_blog_post(user: User) -> str:
     return f"This is {user.name}'s new blog post."
 
 
+## Blueprint that holds the views of this lecture step.
+_blueprint = Blueprint("step_05_authenticated", __name__)
+
+
+@_blueprint.route("/")
+def home() -> str:
+    """Show the result of create_blog_post for a user in and out."""
+    lines = []
+    for name, logged_in in (("Angela", True), ("Bob", False)):
+        user = User(name)
+        user.is_logged_in = logged_in
+        state = "logged in" if logged_in else "logged out"
+        post = create_blog_post(user)
+        lines.append(
+            f"<p>{escape(name)} is {state}: "
+            f"{escape(post) if post else 'no post created'}</p>"
+        )
+    return "<h1>is_authenticated</h1>" + "".join(lines)
+
+
 def create_app() -> Flask:
     """Build the Flask application of this lecture step.
 
     @return The configured Flask application.
     """
     app = Flask(__name__)
-
-    @app.route("/")
-    def home() -> str:
-        """Show the result of create_blog_post for a user in and out."""
-        lines = []
-        for name, logged_in in (("Angela", True), ("Bob", False)):
-            user = User(name)
-            user.is_logged_in = logged_in
-            state = "logged in" if logged_in else "logged out"
-            post = create_blog_post(user)
-            lines.append(
-                f"<p>{escape(name)} is {state}: "
-                f"{escape(post) if post else 'no post created'}</p>"
-            )
-        return "<h1>is_authenticated</h1>" + "".join(lines)
-
+    app.register_blueprint(_blueprint)
     return app
 
 
