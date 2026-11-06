@@ -25,8 +25,26 @@ The repository also holds the small Flask programs of the day's lectures: URL pa
 | `src/higher_lower/` | The game, split in layers: `domain`, `application`, `infrastructure`, `presentation` |
 | `src/higher_lower/constants.py` | Every heading, colour, GIF and number range in one place |
 | `tests/` | pytest tests |
+| `tools/` | Script that captures the lecture screenshots in a Docker container |
 | `docs/` | Project documents (business case, plan, milestones, reviews) |
 | `Doxyfile` | Settings to generate API documentation with Doxygen |
+
+### Lecture steps
+
+One screenshot for each lecture step. The [wiki][wiki] explains what each step teaches, in English, Danish and Bahasa Malaysia.
+
+| Step | Code | Screenshot |
+| --- | --- | --- |
+| 1. Goals: what you build | `server.py` | ![Start page of the game](docs/screenshots/lecture-1-goals.png) |
+| 2. URL paths and variable routes | `step_02_url_paths.py` | ![Route /username/Angela](docs/screenshots/lecture-2-url-paths.png) |
+| 3. Rendering HTML | `step_03_html.py` | ![Heading, paragraph and images](docs/screenshots/lecture-3-html.png) |
+| 4. Decorators for HTML tags | `step_04_decorators.py` | ![Route /bye in bold, emphasis and underline](docs/screenshots/lecture-4-decorators.png) |
+| 5. Advanced decorators with `*args` and `**kwargs` | `step_05_authenticated.py` | ![Logged in and logged out user](docs/screenshots/lecture-5-authenticated.png) |
+| 6. Final project: 3 is too low | `server.py` | ![3 is too low](docs/screenshots/lecture-6-too-low.png) |
+| 6. Final project: 7 is too high | `server.py` | ![7 is too high](docs/screenshots/lecture-6-too-high.png) |
+| 6. Final project: 5 is correct | `server.py` | ![5 is correct](docs/screenshots/lecture-6-correct.png) |
+
+The lecture modules are in `src/higher_lower/presentation/lectures/`; run one with `python -m higher_lower.presentation.lectures.step_02_url_paths`. The screenshots were taken in a Docker container with a headless browser (`bash tools/capture_screenshots.sh`), not on a desktop.
 
 ## 📋 Requirements
 
@@ -110,6 +128,7 @@ The documents a newcomer needs, in reading order.
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower
 [documentation]: ./docs/
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/issues
+[wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/wiki
 [agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
