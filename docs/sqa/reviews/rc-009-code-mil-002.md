@@ -57,6 +57,6 @@ Go — All criteria pass or are not applicable; no blocking finding.
 
 ---
 
-[MIL-002]: ../../docs/milestones/mil-002-lecture-steps.md
-[QC-PY-001]: ../../framework/qc/code/qc-programming-python.md
+[MIL-002]: ../../milestones/mil-002-lecture-steps.md
+[QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [6562eae]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/6562eae9efad20fcadbb4a92f7b3a2d5fdb21c90

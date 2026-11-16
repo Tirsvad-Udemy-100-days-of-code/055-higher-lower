@@ -63,6 +63,6 @@ Go — All criteria pass; no blocking finding.
 
 ---
 
-[SA-001]: ../../docs/stakeholder-analysis.md
-[QC-SA-001]: ../../framework/qc/artifacts/qc-stakeholder-analysis.md
+[SA-001]: ../../stakeholder-analysis.md
+[QC-SA-001]: ../../../framework/qc/artifacts/qc-stakeholder-analysis.md
 [fe0f272]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/fe0f2722c25220f6efa3b9b2f3d5e01e7f6d90dc

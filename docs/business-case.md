@@ -4,14 +4,15 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | |
+| CrossReference | [SA-001], [PP-001], [MIL-005] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [42b3a09] |
+| 2026-11-06 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [42b3a09] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 7, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | pending |
 
 ---
 ## Executive Summary
@@ -39,6 +40,7 @@ A single repository that holds the finished assignment, explains each lecture st
 5. Document in the README how to create and use a local `.venv`, run the application and run the tests.
 6. Provide a screenshot for every lecture step in the README and a wiki in English, Danish and Bahasa Malaysia that explains what each step teaches.
 7. Publish the repository with a description and topics.
+8. Bring the finished project to the common baseline of the framework: the adopted framework release, a README that lists only the documents of the repository, licence and project URL metadata, the editor settings of the baseline, an `.env.example` in the framework's form and a traceability matrix ([MIL-005]).
 
 ## Scope
 
@@ -49,12 +51,14 @@ A single repository that holds the finished assignment, explains each lecture st
 - README from the framework template; wiki in `en`, `da` and `ms`.
 - A screenshot of each lecture step.
 - Repository description and topics on the git host.
+- The baseline milestone [MIL-005]: the framework release, the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, a traceability matrix, review records and one behaviour-neutral change: the indentation of `tools/capture_screenshots.sh`, so that the shell format check of the shared workflow passes without a suppression. It changes no behaviour of the program.
 
 ### Out of Scope
 
 - Persistent storage, user accounts, deployment to a hosting service.
 - Anything from other course days.
 - Testing a GUI on the host desktop; browser checks run in a container or sandbox (`framework/process/gui-testing.md`).
+- Any change to `src/`, `tests/`, the screenshots or the wiki pages in the baseline milestone [MIL-005] (the only changed file of code or tooling is the indentation of `tools/capture_screenshots.sh`). That milestone starts no Flask server, takes no screenshot, starts no container and runs the tests only.
 
 ## Expected Benefits
 
@@ -82,6 +86,7 @@ The project supports the participant's goal of completing the 100 Days of Code c
 | 4 | Lecture coverage | One screenshot per lecture step | Screenshots listed in the README and in each wiki language |
 | 5 | Wiki | Three languages | Pages exist in en, da and ms for every lecture step |
 | 6 | Runtime dependencies | Only Flask | `pyproject.toml` lists one runtime dependency |
+| 7 | The baseline milestone is done (objective 8) | `framework/scripts/check-readme.sh`, `check-languages.sh` and `check-editorconfig.sh` exit with code 0, `shfmt -d tools/capture_screenshots.sh` prints no difference, `python -m pytest` passes, 100 % of the continuous integration (CI) checks of the pull request of [MIL-005] pass | The script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -91,6 +96,7 @@ The project supports the participant's goal of completing the 100 Days of Code c
 | Screenshots need a browser | The host desktop would be taken over | Capture screenshots in a container or sandbox, never on the host desktop |
 | Translation errors in da or ms | Misleading wiki text | Keep wiki pages short and structurally identical across languages; S01 reviews |
 | Token leak | Credential exposure | Tokens stay in `.env`, which git ignores and the project never imports |
+| The documents of the baseline milestone [MIL-005] change documents that were accepted earlier, and an AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` and `tests/` are not changed, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -108,7 +114,8 @@ The project supports the participant's goal of completing the 100 Days of Code c
 - A branch and a pull request per milestone; no direct commits to `main`.
 - No runtime dependency beyond Flask.
 - Tokens are read from `.env` for personal use only; the project does not test or import them.
-- The PO language is English and the domain is IT.
+- The Product Owner (PO) language is English. The PO domain is education since [MIL-005] (it was IT until then; the documents that [MIL-005] does not change keep the domain `it`, see the Open Issues of [PP-001]).
+- The baseline milestone [MIL-005] starts 2026-11-16 and is finished within one week, by 2026-11-23. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
 
 ## Cost–Benefit Assessment
 
@@ -134,3 +141,6 @@ Proceed — the scope is small, the cost is time only and the result is a reusab
 ---
 
 [42b3a09]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/42b3a093b773c9743ae3c104e1c30bf3dc480d7c
+[SA-001]: ./stakeholder-analysis.md
+[PP-001]: ./project-plan.md
+[MIL-005]: ./milestones/mil-005-framework-baseline.md
