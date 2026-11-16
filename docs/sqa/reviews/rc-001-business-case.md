@@ -62,6 +62,6 @@ Go — All Mandatory and Optional criteria pass for BC-001 and QC-LANG-001; no b
 
 ---
 
-[BC-001]: ../../docs/business-case.md
-[QC-BC-001]: ../../framework/qc/artifacts/qc-business-case.md
+[BC-001]: ../../business-case.md
+[QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [fe0f272]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/fe0f2722c25220f6efa3b9b2f3d5e01e7f6d90dc

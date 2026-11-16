@@ -27,6 +27,9 @@ The repository also holds the small Flask programs of the day's lectures: URL pa
 | `tests/` | pytest tests |
 | `tools/` | Script that captures the lecture screenshots in a Docker container |
 | `docs/` | Project documents (business case, plan, milestones, reviews) |
+| `framework/` | The SQA and QC framework (a git submodule) that the project documents follow |
+| `.editorconfig` | The editor settings of the framework baseline |
+| `.env.example` | Placeholders for the git host tokens that the framework scripts read; the program itself reads no setting from `.env` |
 | `Doxyfile` | Settings to generate API documentation with Doxygen |
 
 ### Lecture steps
@@ -99,7 +102,7 @@ doxygen Doxyfile
 
 ## 📄 License
 
-GNU Affero General Public License v3.0, see [LICENSE][license].
+GNU Affero General Public License v3.0 only (AGPL-3.0-only), see [LICENSE][license].
 
 ## 🔗 Links
 
@@ -113,14 +116,12 @@ The documents a newcomer needs, in reading order.
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
+| [Traceability matrix][TM-001] | How the documents link and when each was reviewed |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
 
 ---
 
@@ -129,11 +130,9 @@ The documents a newcomer needs, in reading order.
 [documentation]: ./docs/
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/issues
 [wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/wiki
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
 [milestones]: ./docs/milestones/
+[TM-001]: ./docs/sqa/traceability-matrix.md
 [registry]: ./docs/artifact-registry.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md

@@ -57,6 +57,6 @@ Go — All criteria pass or are not applicable; no blocking finding.
 
 ---
 
-[MIL-003]: ../../docs/milestones/mil-003-higher-lower-game.md
-[QC-PY-001]: ../../framework/qc/code/qc-programming-python.md
+[MIL-003]: ../../milestones/mil-003-higher-lower-game.md
+[QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [cc95105]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/cc95105cf4fb9915e4c392fa58eec5d9a1f7c454

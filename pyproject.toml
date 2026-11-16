@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,10 +8,17 @@ version = "0.1.0"
 description = "Day 55 of Udemy's 100 Days of Code: a Higher or Lower guessing game as a Flask website."
 readme = "README.md"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "Jens Tirsvad Nielsen" }]
 dependencies = [
     "flask>=3.0",
 ]
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/issues"
 
 [project.optional-dependencies]
 test = [
