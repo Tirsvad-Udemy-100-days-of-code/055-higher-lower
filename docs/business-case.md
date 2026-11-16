@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-06 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [42b3a09] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 7, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 8, success criterion 7, a scope item, an out-of-scope item, a risk and two constraints for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | [37e0eab] |
 
 ---
 ## Executive Summary
@@ -144,3 +144,4 @@ Proceed — the scope is small, the cost is time only and the result is a reusab
 [SA-001]: ./stakeholder-analysis.md
 [PP-001]: ./project-plan.md
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
+[37e0eab]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/37e0eab8e402f60b832a5194cf14347a63119736

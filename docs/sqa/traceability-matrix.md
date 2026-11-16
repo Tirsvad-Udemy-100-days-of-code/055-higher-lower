@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the baseline milestone MIL-005 (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the baseline milestone MIL-005 (autonomous, not independent) | [37e0eab] |
 
 ---
 
@@ -77,3 +77,4 @@ Tracks backward and forward links between the artifact instances of Higher or Lo
 [RC-015]: ./reviews/rc-015-project-plan-baseline.md
 [RC-016]: ./reviews/rc-016-milestone-005.md
 [RC-017]: ./reviews/rc-017-wiki-baseline.md
+[37e0eab]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/055-higher-lower/commit/37e0eab8e402f60b832a5194cf14347a63119736
